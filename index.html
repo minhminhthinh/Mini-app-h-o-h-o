@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mua Key Game/Tool Tự Động</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0b0e17;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .gradient-bg {
+            background: radial-gradient(circle at top, #1e1b4b 0%, #0b0e17 100%);
+        }
+        .card-dark {
+            background: rgba(30, 41, 59, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+        .btn-active {
+            color: #818cf8;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen flex justify-center items-start p-4">
+
+    <div class="w-full max-w-md card-dark rounded-3xl p-6 shadow-2xl relative pb-24 min-h-[850px] flex flex-col justify-between">
+        
+        <div>
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center gap-3">
+                    <img src="https://api.dicebear.com/7.x/identicon/svg?seed=user" id="user-avatar" alt="Avatar" class="w-12 h-12 rounded-full border border-gray-700">
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Khách hàng</h4>
+                        <p class="text-xs text-gray-400">ID: <span id="user-id">Đang tải...</span></p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end gap-2">
+                    <span class="text-indigo-400 font-bold text-lg">0đ</span>
+                    <span class="text-[10px] bg-slate-800 text-gray-300 px-2 py-1 rounded-md border border-slate-700 font-semibold tracking-wider">CUSTOMER</span>
+                </div>
+            </div>
+
+            <button onclick="accessAdminPanel()" class="absolute top-4 right-4 text-xs bg-red-600/20 hover:bg-red-600/40 text-red-400 px-3 py-1.5 rounded-full border border-red-500/30 transition">
+                <i class="fa-solid fa-lock mr-1"></i> Admin Panel
+            </button>
+
+            <div class="flex items-center gap-4 bg-slate-900/60 p-4 rounded-2xl mb-6 border border-slate-800">
+                <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 rounded-2xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white">Mua Key Game/Tool</h3>
+                    <p class="text-xs text-gray-400">Hệ thống tự động cấp Key</p>
+                </div>
+            </div>
+
+            
